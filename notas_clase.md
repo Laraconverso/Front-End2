@@ -26,6 +26,25 @@ Bucles
     do while
 ```
 
+Conociendo a la consola del navegador
+En general la consola nos sirve para ver que ocurre cuando ejecutamos una tarea o peticion al servidor. </br>
+Puede ser que nos devuelva el dato que buscabamos, un error o un aviso. A este proceso de inspeccionar las paginas y encontrar/ cazar errores se lo denomina depurar o debugging. 
+
+Por lo general la consola esteos 2 tipos de errores:
+- SyntaxError
+- TypeError 
+
+Light house es una herramienta que genera reportes para comprobar ciertos recursos que debe tener la web para ser optima. Entre estos esta la performace, la accesibilidad y el SEO. </br>
+
+Formas de mostrar mensajes en la consola, o en el navegador
+```js
+console.log("mensaje.");
+console.error("Muestra el msj con caracteristica de error.");
+console.warn("Muestra el msj como advertencia.");
+console.table("Muestra la info como tabla");
+alert("genera una alerta en el navegador con el contenido del msj.");
+```
+
 ### _Notas de clase_
 
 ## Clase 2:
