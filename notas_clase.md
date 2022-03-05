@@ -47,6 +47,13 @@ alert("genera una alerta en el navegador con el contenido del msj.");
 
 ### _Notas de clase_
 
+DOM -> document object model, es la representacion de la estructura de mi documento html. </br>
+
+Como con las hojas de estilo, se recomienda armar un file aparte. </br>
+Dentro del HTML se recomienda linkear el archivo del script al final del body, para asegurarnos que ya leyo toda la pagina antes de correr el script. </br>
+
+
+
 ## Clase 2:
 -----
 ### _Notas del material_
