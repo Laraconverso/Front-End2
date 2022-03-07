@@ -89,13 +89,15 @@ Bucles especificos: </br>
 ```
 
 ### _Notas de clase_
+7-3-22
 
-## Clase 3:
+
+<!-- ## Clase 3:
 ----
 ### _Notas del material_
 ??? 
 ### _Notas de clase_
-???
+??? -->
 
 # Modulo 2 - 
 ## Clase 4:
