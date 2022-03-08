@@ -89,7 +89,17 @@ Bucles especificos: </br>
 ```
 
 ### _Notas de clase_
-7-3-22
+diferencias entre como declarar las variables en js:
+Es un lenguaje no tipado, la variable es una bolsa que agarra la forma de lo que le metemos adentro. </br>
+3 formas de declarar varibles: </br>
+```js
+    var numero = 15;
+```
+Declarando la variable con `var` y luego lo vuelvo a hacer se sobreescribe. 
+A partir de ESC6 se comenzo a utilizar `let ` para declarar las variables en este caso se declaran por entorno. 
+
+
+
 
 
 <!-- ## Clase 3:
