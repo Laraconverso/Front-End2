@@ -98,7 +98,7 @@ Es un lenguaje no tipado, la variable es una bolsa que agarra la forma de lo que
 Declarando la variable con `var` y luego lo vuelvo a hacer se sobreescribe. 
 A partir de ESC6 se comenzo a utilizar `let ` para declarar las variables en este caso se declaran por entorno. 
 
-
+Hacemos ej de piedra papel y tijera en grupos. 
 
 
 
