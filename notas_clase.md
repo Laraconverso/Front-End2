@@ -113,8 +113,31 @@ Hacemos ej de piedra papel y tijera en grupos.
 ## Clase 4:
 ----
 ### _Notas del material_
-Objeto Window y document 
-Seleccionando elementos
+Objeto Window y document </br>
+El objeto Window se utiliza para leer y manipular la ventana del navegador. Mientras que el objeto Document se encarga del contenido. Desde el document podemos modificar las clases y estilos de nuestro HTML. Mientras que desde el Window podríamos leer y modificar la locación de nuestro navegador. </br>
+Seleccionando elementos </br>
+DOM selectores</br>
+Para acceder a los elementos de una pagina, usamos selectores. Cada selector puede retornar un solo elemento o una lista de elemntos. Para poder hacer uso de los selectores debemos hacer uso del objeto document, ya que los selectores son metodos del mismo.</br>
+`querySelector()`
+```js
+    let titulo = document.querySelecto('.title');
+```
+`querSelectorAll()`
+```js
+    let nombres = document.querySelectorAll('.name');
+```
+`getElementById()`
+```js
+    let marca = document.getElementById('marca');
+```
+comparando selectores:</br>
+| querySelector()| querySelectorAll()| getElementById()|   
+|----------------|-------------------|-----------------|
+| Retorna el primer elemento del DOM que cumplecon la condicion que buscamos. | Retorna todos los elementos del DOM que cumplen con la condicion que buscamos. | Retorna el elemento del DOM que cumpla con el id que buscamos. |
+
+
+</br>
+
 ### _Notas de clase_
 
 
