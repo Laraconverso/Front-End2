@@ -139,15 +139,21 @@ comparando selectores:</br>
 </br>
 
 ### _Notas de clase_
+window.location --> nos retorna la URL de la pagina.
 
 
 ## Clase  :
 ----
 ### _Notas del material_
-Modificando el DOM
-Plantillas de testo
-Modificando estilos
-Modificando clases
+`document.getElementById();` // el id es algo unico de cada elemento</br>
+`document.getElementsByClassName();` //devuelve un array de los elementos con la clase indicada </br>
+`document.getElementsByTagName("p");` //devuelve un array de todos los elementos con el tagname indicado </br>
+`document.querySelector("p");`// mas general puedo buscar cualquier cosa, depende de como lo escribo en los parametros, devuelve el primer elemento encontrado </br>
+`document.querySelectorAll("p"); `//devuelve un array con todos los elementos
+</br> 
+
 ### _Notas de clase_
+Armamos una pagina con ejemplos que se encuentra ubicada en la carpeta C3
+la actividad de la mesa se encuentra en la carpeta C3 en el archivo `act.js`. 
 
 # Modulo  - 
