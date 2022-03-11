@@ -142,7 +142,7 @@ comparando selectores:</br>
 window.location --> nos retorna la URL de la pagina.
 
 
-## Clase  :
+## Clase 3 :
 ----
 ### _Notas del material_
 `document.getElementById();` // el id es algo unico de cada elemento</br>
@@ -154,6 +154,7 @@ window.location --> nos retorna la URL de la pagina.
 
 ### _Notas de clase_
 Armamos una pagina con ejemplos que se encuentra ubicada en la carpeta C3
-la actividad de la mesa se encuentra en la carpeta C3 en el archivo `act.js`. 
+la actividad de la mesa se encuentra en la carpeta C3 en la carpeta actividad_clase
+
 
 # Modulo  - 
