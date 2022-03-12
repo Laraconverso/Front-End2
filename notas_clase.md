@@ -156,5 +156,10 @@ window.location --> nos retorna la URL de la pagina.
 Armamos una pagina con ejemplos que se encuentra ubicada en la carpeta C3
 la actividad de la mesa se encuentra en la carpeta C3 en la carpeta actividad_clase
 
+## Clase 4:
+### _Notas de clase_
+Estructura de una pagina web:</br>
+ver imagen cuadro </br>
 
-# Modulo  - 
+
+# <span>Modulo  - </span>
