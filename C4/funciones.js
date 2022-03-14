@@ -9,4 +9,3 @@ btnactivar.addEventListener("click", ()=>{
     tarea.classList.remove("completada");
 })
 
-tarea.classList.

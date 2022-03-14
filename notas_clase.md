@@ -157,9 +157,15 @@ Armamos una pagina con ejemplos que se encuentra ubicada en la carpeta C3
 la actividad de la mesa se encuentra en la carpeta C3 en la carpeta actividad_clase
 
 ## Clase 4:
-### _Notas de clase_
-Estructura de una pagina web:</br>
-ver imagen cuadro </br>
-
+### _Notas_
+Modificando el DOM</br>
+`document.querySelector()` es uno de los selectores que permite elegir que elemento se quiere modificar del DOM. </br>
+La propiedad `.innerHTML` al ser utilizada para escritura reemplaza completamente lo que ya estaba, con el operando `+=` se agrega el contenido al que ya estaba. </br>
+Con la propiedad `innerText` sirve para leer o modificar el texto de una etiqueta HTML.</br>
+```js
+    document.querySelector('div.nombre').innerText; //--> retorna lo que este escrito en ese elemento. 
+    document.querySelector('div.nombre').innerText = 'Lara'; //--> reemplaza lo que estaba escrito por Lara, en este caso. 
+    document.querySelector('div.nombre').innerText += 'Messi'; //--> agrega el Messi 
+```
 
 # <span>Modulo  - </span>
