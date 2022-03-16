@@ -168,4 +168,43 @@ Con la propiedad `innerText` sirve para leer o modificar el texto de una etiquet
     document.querySelector('div.nombre').innerText += 'Messi'; //--> agrega el Messi 
 ```
 
-# <span>Modulo  - </span>
+# <span>Modulo  3 </span>
+
+## Clase 5:
+### _Notas del material_
+Eventos:</br>
+Un evento es una accion que transcurre en el navegador o que es ejecutada por el usuario.</br>
+`onload` permite que todo el script se ejecute cuando se haya cargado por comlejto el objeto document dentro del objeto window.
+```js
+    window.onload = function(){
+        console.log('el documento esta listo');
+    }
+```
+`onclick` este evento nos permite ejecutar una accion cuando se haga click sobre el elemento al cual le estamos aplicando la propiedad. 
+```js
+    btn.onclick = funciton(){
+        console.log('hiciste click');
+    }
+```
+`preventDefault()` Nos permite evitar que se ejecute el evento predetermiado del elemento al que se lo estamos aplicando. 
+```js
+    let hipervinculo =document.querySelector('a');
+    hipervinculo addEventListener('click', function(event){
+        console.log('hiciste click');
+        event.preventDefault();
+    });
+```
+Lista de eventos mas utilizados:</br>
+- `onclick`
+- `ondbliclick`
+- `onmouseover` 
+- `onmousemove`
+- `onscroll`
+- `onkeydown`
+- `onload`
+- `onsubmit`
+
+Eventos del teclado</br>
+
+
+### _Notas de clase_
