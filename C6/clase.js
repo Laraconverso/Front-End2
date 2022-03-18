@@ -14,3 +14,5 @@ urlImagenes.forEach((url, index) =>{
     const nodoImagen = document.querySelector(`#imagen-${index +1}`);
     nodoImagen.src = url;
 });
+
+
