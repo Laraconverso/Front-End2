@@ -37,6 +37,10 @@ function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
   datosPersona.nombre = prompt("Ingresa tu nombre:");
   anioNacimiento = prompt("Ingresa el año en que naciste:");
+  if (isNaN(anioNacimiento)){
+    alert("Ingresa un anio!");
+    anioNacimiento = prompt("Ingresa el año en que naciste:");
+  }
   let anioActual = new Date().getFullYear();
   datosPersona.edad = anioActual - anioNacimiento;
   datosPersona.ciudad = prompt("Ingresa donde vives:");
@@ -71,11 +75,14 @@ function recorrerListadoYRenderizarTarjetas() {
 
 function alternarColorTema() {
   /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
- 
+  document.getElementById("sitio").classList.toggle("dark");
   
-
 
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
-
+document.addEventListener('keydown', (event)=>{
+  if(event.key === 'F'||'f'){
+    document.getElementById("sobre-mi").classList.remove("oculto");
+  }
+})
