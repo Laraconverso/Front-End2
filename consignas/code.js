@@ -35,13 +35,14 @@ cambiarTema.addEventListener("click", alternarColorTema);
 
 function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
-  datosPersona.nombre = prompt("Ingresa tu nombre:");
+  let nombre = prompt("Ingresa tu nombre:");
+  datosPersona.nombre = nombre;
+  let anioActual = new Date().getFullYear();
   anioNacimiento = prompt("Ingresa el año en que naciste:");
-  if (isNaN(anioNacimiento)){
-    alert("Ingresa un anio!");
+  if (isNaN(anioNacimiento) || anioNacimiento > anioActual){
+    alert("El año ingresado no es valido, intente nuevamente...");
     anioNacimiento = prompt("Ingresa el año en que naciste:");
   }
-  let anioActual = new Date().getFullYear();
   datosPersona.edad = anioActual - anioNacimiento;
   datosPersona.ciudad = prompt("Ingresa donde vives:");
   let interesado = confirm("¿Te interesa JavaScript?")
@@ -52,32 +53,32 @@ function renderizarDatosUsuario() {
   /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
   obtenerDatosDelUsuario();
   /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
-  document.getElementById('nombre').innerText += datosPersona.nombre;
-  document.getElementById('edad').innerText += datosPersona.edad;
-  document.getElementById('ciudad').innerText += datosPersona.ciudad;
-  document.getElementById('javascript').innerText += datosPersona.interesPorJs;
+  document.getElementById('nombre').innerText = datosPersona.nombre;
+  document.getElementById('edad').innerText = datosPersona.edad;
+  document.getElementById('ciudad').innerText = datosPersona.ciudad;
+  document.getElementById('javascript').innerText = datosPersona.interesPorJs;
 
 }
 
 
 function recorrerListadoYRenderizarTarjetas() {
   /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
-  listado.forEach(info => {
+  let contenedor = document.getElementById("fila");
+  if(contenedor.innerHTML == ""){
+    listado.forEach(info => {
       const tarjeta = `<div class="caja">
       <img src="${info.imgUrl}">
       <p class="lenguajes">${info.lenguajes}</p>
       <p class="bimestre">${info.bimestre}</p>
       </div>`
-      document.getElementById("fila").innerHTML += tarjeta;
-  });
-
+      contenedor.innerHTML += tarjeta;
+    });
+  }
 }
 
 function alternarColorTema() {
   /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
   document.getElementById("sitio").classList.toggle("dark");
-  
-
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
@@ -86,3 +87,5 @@ document.addEventListener('keydown', (event)=>{
     document.getElementById("sobre-mi").classList.remove("oculto");
   }
 })
+
+materiasBtn.even
