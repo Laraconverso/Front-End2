@@ -208,3 +208,9 @@ Eventos del teclado</br>
 
 
 ### _Notas de clase_
+
+## Clase 11:
+### _Notas del clase_
+Formularios:</br>
+Todos los eventos de los formularios tienen inputs. - Rip prompts - </br>
+Los checkboxes del mismo grupo deben tener el mismo name 

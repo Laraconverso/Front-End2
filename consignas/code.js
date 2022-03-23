@@ -35,17 +35,25 @@ cambiarTema.addEventListener("click", alternarColorTema);
 
 function obtenerDatosDelUsuario() {
   /* --------------- PUNTO 1: Escribe tu codigo a partir de aqui --------------- */
-  let nombre = prompt("Ingresa tu nombre:");
+  let nombre = prompt("Ingresa tu nombre:").trim();
+  while(nombre == ""){
+    alert("No ingresaste tu nombre ;( ");
+    nombre = prompt("Ingresa tu nombre:").trim();
+  }
   datosPersona.nombre = nombre;
   let anioActual = new Date().getFullYear();
-  anioNacimiento = prompt("Ingresa el año en que naciste:");
-  if (isNaN(anioNacimiento) || anioNacimiento > anioActual){
+  let anioNacimiento = prompt("Ingresa el año en que naciste:").trim();
+  while (isNaN(anioNacimiento) || anioNacimiento > anioActual || anioNacimiento == ""){
     alert("El año ingresado no es valido, intente nuevamente...");
-    anioNacimiento = prompt("Ingresa el año en que naciste:");
+    anioNacimiento = prompt("Ingresa el año en que naciste:").trim();
   }
   datosPersona.edad = anioActual - anioNacimiento;
-  datosPersona.ciudad = prompt("Ingresa donde vives:");
-  let interesado = confirm("¿Te interesa JavaScript?")
+  datosPersona.ciudad = prompt("Ingresa donde vives:").trim();
+  while(datosPersona.ciudad == ""){
+    alert("Entrada no valida...");
+    datosPersona.ciudad = prompt("Ingresa donde vives:").trim();
+  }
+  let interesado = confirm("¿Te interesa JavaScript?");
   datosPersona.interesPorJs = interesado ? "Si" : "No";
 }
 
@@ -67,7 +75,7 @@ function recorrerListadoYRenderizarTarjetas() {
   if(contenedor.innerHTML == ""){
     listado.forEach(info => {
       const tarjeta = `<div class="caja">
-      <img src="${info.imgUrl}">
+      <img src="${info.imgUrl}" alt="${"Logo " + info.lenguajes}">
       <p class="lenguajes">${info.lenguajes}</p>
       <p class="bimestre">${info.bimestre}</p>
       </div>`
