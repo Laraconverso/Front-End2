@@ -94,4 +94,4 @@ document.addEventListener('keydown', (event)=>{
   if(event.key === 'F'||'f'){
     document.getElementById("sobre-mi").classList.remove("oculto");
   }
-})
+});
