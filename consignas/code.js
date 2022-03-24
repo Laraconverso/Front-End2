@@ -95,5 +95,3 @@ document.addEventListener('keydown', (event)=>{
     document.getElementById("sobre-mi").classList.remove("oculto");
   }
 })
-
-materiasBtn.even
