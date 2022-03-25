@@ -1,5 +1,4 @@
 ##### Notas tomadas durante la clase. 
-
 # Modulo 1 - Bienvenida e introducción a JavaScript Front
 ## Clase 1:
 ----
@@ -101,15 +100,20 @@ A partir de ESC6 se comenzo a utilizar `let ` para declarar las variables en est
 Hacemos ej de piedra papel y tijera en grupos. 
 
 
-
-<!-- ## Clase 3:
+# Modulo 2 - 
+## Clase 3:
 ----
 ### _Notas del material_
-??? 
-### _Notas de clase_
-??? -->
+`document.getElementById();` // el id es algo unico de cada elemento</br>
+`document.getElementsByClassName();` //devuelve un array de los elementos con la clase indicada </br>
+`document.getElementsByTagName("p");` //devuelve un array de todos los elementos con el tagname indicado </br>
+`document.querySelector("p");`// mas general puedo buscar cualquier cosa, depende de como lo escribo en los parametros, devuelve el primer elemento encontrado </br>
+`document.querySelectorAll("p"); `//devuelve un array con todos los elementos
+</br> 
 
-# Modulo 2 - 
+### _Notas de clase_
+Armamos una pagina con ejemplos que se encuentra ubicada en la carpeta C3
+la actividad de la mesa se encuentra en la carpeta C3 en la carpeta actividad_clase
 ## Clase 4:
 ----
 ### _Notas del material_
@@ -140,24 +144,8 @@ comparando selectores:</br>
 
 ### _Notas de clase_
 window.location --> nos retorna la URL de la pagina.
-
-
-## Clase 3 :
-----
-### _Notas del material_
-`document.getElementById();` // el id es algo unico de cada elemento</br>
-`document.getElementsByClassName();` //devuelve un array de los elementos con la clase indicada </br>
-`document.getElementsByTagName("p");` //devuelve un array de todos los elementos con el tagname indicado </br>
-`document.querySelector("p");`// mas general puedo buscar cualquier cosa, depende de como lo escribo en los parametros, devuelve el primer elemento encontrado </br>
-`document.querySelectorAll("p"); `//devuelve un array con todos los elementos
-</br> 
-
+## Clase 5:
 ### _Notas de clase_
-Armamos una pagina con ejemplos que se encuentra ubicada en la carpeta C3
-la actividad de la mesa se encuentra en la carpeta C3 en la carpeta actividad_clase
-
-## Clase 4:
-### _Notas_
 Modificando el DOM</br>
 `document.querySelector()` es uno de los selectores que permite elegir que elemento se quiere modificar del DOM. </br>
 La propiedad `.innerHTML` al ser utilizada para escritura reemplaza completamente lo que ya estaba, con el operando `+=` se agrega el contenido al que ya estaba. </br>
@@ -168,9 +156,20 @@ Con la propiedad `innerText` sirve para leer o modificar el texto de una etiquet
     document.querySelector('div.nombre').innerText += 'Messi'; //--> agrega el Messi 
 ```
 
-# <span>Modulo  3 </span>
+## Clase 6:
+----
+### _Notas del material_
+### _Notas de clase_
 
-## Clase 5:
+# Modulo  3
+
+## Clase 7:
+----
+### _Notas del material_
+### _Notas de clase_
+
+
+## Clase 8:
 ### _Notas del material_
 Eventos:</br>
 Un evento es una accion que transcurre en el navegador o que es ejecutada por el usuario.</br>
@@ -205,12 +204,73 @@ Lista de eventos mas utilizados:</br>
 - `onsubmit`
 
 Eventos del teclado</br>
-
+...
 
 ### _Notas de clase_
+La actividad de clase se encuentra en la carpeta `C8`.
+
+## Clase 9:
+----
+### _Notas del material_
+### _Notas de clase_
+
+## Clase 10:
+### Entregable.
 
 ## Clase 11:
 ### _Notas del clase_
 Formularios:</br>
 Todos los eventos de los formularios tienen inputs. - Rip prompts - </br>
 Los checkboxes del mismo grupo deben tener el mismo name 
+
+## Clase 12:
+### _Notas del clase_
+Catch-up.
+
+# Modulo 4 - 
+## Clase 13:
+----
+### _Notas del material_
+Formularios II:
+### _Notas del clase_
+
+## Clase 14:
+----
+### _Notas del material_
+JSON y Storage:
+### _Notas del clase_
+
+
+## Clase 15:
+----
+### _Notas del material_
+Catchup + To-Do app.
+### _Notas del clase_
+# Modulo 5 - 
+## Clase 16:
+----
+### _Notas del material_
+### _Notas del clase_
+
+## Clase 17:
+----
+### _Notas del material_
+### _Notas del clase_
+
+## Clase 18:
+----
+### _Notas del material_
+### _Notas del clase_
+
+## Clase 19:
+----
+### _Notas del material_
+### _Notas del clase_
+
+
+-----------
+# Modulo 6 - 
+## Clase ?:
+----
+### _Notas del material_
+### _Notas del clase_
