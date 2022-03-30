@@ -161,7 +161,7 @@ Con la propiedad `innerText` sirve para leer o modificar el texto de una etiquet
 ### _Notas del material_
 ### _Notas de clase_
 
-# Modulo  3
+# Modulo 3
 
 ## Clase 7:
 ----
@@ -225,21 +225,55 @@ Los checkboxes del mismo grupo deben tener el mismo name
 
 ## Clase 12:
 ### _Notas del clase_
-Catch-up.
+Catch-up.</br>
+
+Armamos un ecommerce, el contenido de hoy se encuentra en la carpeta `C13`
 
 # Modulo 4 - 
 ## Clase 13:
 ----
 ### _Notas del material_
-Formularios II:
+Formularios II: </br>
+Eventos del formularios: </br>
+- focus: sucede cuando el usuario ingresa con el cursor en un campo input.
+- blur: sucede cuando el cursor abandona el cmapo en donde se encuentra.
+- change: sucede cuando cambia 
+- submit
+- preventDefault
+- this
+- this.value
+</br>
+Validando desde el lado del cliente
+
+1. Capturar el formulario:
+```js
+let formulario = document.querySelector("from.reservation")
+let formulario = document.forms["reservation"]
+```
+Eventos del formulario -> submit.
+Validando los campos--> obtenemos el input
+
 ### _Notas del clase_
 
 ## Clase 14:
 ----
 ### _Notas del material_
-JSON y Storage:
-### _Notas del clase_
+JSON y Storage:</br>
+Metodos json:
+```js
+JSON.parse()// = JSON --> JS
+JSON.stringify()//=JS--> JSON
+```
+LocalStorage:</br>
+```js
+localStorage.setItem()
+localStorage.getItem()
 
+```
+
+### _Notas del clase_
+- Ver ejercicio de practica de JSON.
+el ej de las mesas se encuentra en `C14`
 
 ## Clase 15:
 ----
