@@ -280,10 +280,13 @@ el ej de las mesas se encuentra en `C14`
 ### _Notas del material_
 Catchup + To-Do app.
 ### _Notas del clase_
+hicimos una actividad esta dentro de la carpeta correspondiente. `C15/ej_mesas`
+
 # Modulo 5 - 
 ## Clase 16:
 ----
 ### _Notas del material_
+AJAX: 
 ### _Notas del clase_
 
 ## Clase 17:
