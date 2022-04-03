@@ -286,12 +286,44 @@ hicimos una actividad esta dentro de la carpeta correspondiente. `C15/ej_mesas`
 ## Clase 16:
 ----
 ### _Notas del material_
-AJAX: 
+AJAX: </br>
+AJAX (Asynchronous JavaScript and XML) es un conjunto de tecnologías que se utilizan para crear aplicaciones web asíncronas. Esto las vuelve más rápidas y con mejor respuesta a las acciones del usuario.</br>
+Pasos de el accionar ajax:</br>
+1. Se produce un evento en una página web (se carga la página, se hace clic en un botón)
+2. JavaScript crea un objeto XMLHttpRequest
+3. El objeto XMLHttpRequest envía una solicitud a un servidor web
+4. El servidor procesa la solicitud.
+5. El servidor envía una respuesta a la página web.
+6. La respuesta es leída por JavaScript.
+7. JavaScript realiza la acción adecuada (como la actualización de la página)
+</br>
+HTTP</br>
+HTTP o Hypertext Transfer Protocol es un protocolo de intercambio de datos en la Web entre cliente y servidor. Los mensajes HTTP forman una estructura como medio para realizar una petición de datos iniciada por el cliente, normalmente un navegador web, en busca de su respuesta ejecutada por el servidor. De esta manera, se resuelve una o más tareas, a través de mecanismos que veremos más adelante. </br>
+
+El protocolo HTTP es extensible, esto significa que con el tiempo se ha permitido que se implementen más funciones de control y funcionalidad sobre la Web: caché o métodos de identificación o autenticación.</br>
+
+En versiones anteriores, los mensajes HTTP eran textos planos. En HTTP/2, los mensajes están estructurados en un nuevo formato, lo que contribuye a una mayor legibilidad y debugging más eficiente.</br>
+</br>
+Existen 2 tipos de asincronismo: </br>
+
+- Concurrencia: cuando las tareas pueden comenzar, ejecutarse y completarse en períodos de tiempo superpuestos, en donde al menos dos hilos están progresando
+- Paralelismo: cuando dos o más tareas se ejecutan exactamente al mismo tiempo.
+La diferencia entre la concurrencia y el paralelismo está en que, en el primer caso, no implica que las tareas terminen de ejecutarse al mismo tiempo literalmente como sí ocurre en el segundo caso. Además, decimos que JavaScript es un lenguaje no-bloqueante porque las tareas no se quedan bloqueadas esperando a que finalicen evitando proseguir con el resto de tareas.</br>
+
+Metodos de peticion: (REQ)</br>
+`GET` -->solicitar datos
+`POST` --> enviar/ crear un dato
+`DELETE` --> reemplazar un dato
+`PUT` --> modificar parcialment un dato
+`PATCH` --> borrar un dato
+
 ### _Notas del clase_
 
 ## Clase 17:
 ----
 ### _Notas del material_
+APIs:</br>
+
 ### _Notas del clase_
 
 ## Clase 18:
