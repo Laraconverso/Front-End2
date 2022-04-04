@@ -318,6 +318,12 @@ Metodos de peticion: (REQ)</br>
 `PATCH` --> borrar un dato
 
 ### _Notas del clase_
+promesa--> objeto que nos permite decidir si recibo o no lo que estoy esperando </br>
+`resolve`--> si se cumple</br>
+`reject` --> si no se cumple</br>
+`then`--> para la respuestas favorables (positivas)</br>
+`catch` --> ocurre si hay un error 
+
 
 ## Clase 17:
 ----
