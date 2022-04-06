@@ -329,8 +329,9 @@ promesa--> objeto que nos permite decidir si recibo o no lo que estoy esperando 
 ----
 ### _Notas del material_
 APIs:</br>
-
+ver carpeta clas 17
 ### _Notas del clase_
+hacemos ej de fetch api en la carpeta de la `C17`
 
 ## Clase 18:
 ----
