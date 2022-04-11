@@ -340,8 +340,8 @@ hacemos ej de fetch api en la carpeta de la `C17`
 
 ## Clase 19:
 ----
-### _Notas del material_
 ### _Notas del clase_
+Hacemos el ToDo app
 
 
 -----------
