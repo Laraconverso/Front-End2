@@ -40,7 +40,7 @@ window.addEventListener('load', function () {
            return response.json();
        })
        .then(data => {
-           console.log("Promesa cumplida:");
+           console.log("Login exitoso: ");
            console.log(data);
 
            if (data.jwt) {
@@ -48,10 +48,10 @@ window.addEventListener('load', function () {
                localStorage.setItem('jwt', JSON.stringify(data.jwt));
 
                //redireccionamos a la página
-               location.replace('/mis-tareas.html');
+               //location.replace('/mis-tareas.html');
            }
        }).catch(err => {
-           console.log("Promesa rechazada:");
+           console.log("Login rechazado:");
            console.log(err);
        })
     }
