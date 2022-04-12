@@ -48,8 +48,8 @@ window.addEventListener('load', function () {
                localStorage.setItem('jwt', JSON.stringify(data.jwt));
 
                //redireccionamos a la página
-               //location.replace('/mis-tareas.html');
-           }
+               location.replace('/mis-tareas.html');
+            }
        }).catch(err => {
            console.log("Login rechazado:");
            console.log(err);
