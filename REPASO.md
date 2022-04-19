@@ -196,14 +196,14 @@ document.body.appendChild(diV)
 VERDADERO
 
 #### *Atributos dinamicos*
---> Etiqueta <img>
+--> Etiqueta ```<img>```
 - alt
 - src
-- width
---> Etiqueta <a>
+- width</br>
+--> Etiqueta ```</a>```
 - href
-- target
---> Etiqueta <meta>
+- target</br>
+--> Etiqueta ```<meta>```
 - charset
 - name
 
@@ -255,6 +255,39 @@ key
 
 #### *forms*
 <img src="./img-teoria/img_form.png">
+
+#### *El evento blur sirve para...*
+detectar que el usuario quitó el cursor de un input del formulario.
+
+#### *El evento focus sirve para...*
+detectar que el usuario situó el cursor en un input del formulario.
+
+#### *El evento change sirve para..*
+detectar cambios en el valor de un input.
+
+#### *Si utilizáramos el atributo href de location sobre la URL: https://www.youtube.com/results?search_query=peaky+blinders, ¿qué obtendríamos??*
+https://www.youtube.com/results?search_query=peaky+blinders
+
+#### *¿Qué método del objeto location permite recargar el sitio?*
+location.reload();
+
+#### *Si utilizáramos el atributo location.search de la URL: https://www.youtube.com/results?search_query=peaky+blinders, ¿qué obtendríamos?*
+search_query=peaky+blinders
+
+#### *Si estamos en la URL: https://www.youtube.com/results?search_query=peaky+blinders, y teniendo en cuenta el código: "let query = new URLSearchParams(location.search)", ¿qué devolvería si implementáramos el método query.get(search_query)?*
+peaky+blinders
+
+#### *Metodos json*
+```js
+JSON.parse()// = JSON --> JS
+JSON.stringify()//=JS--> JSON
+```
+#### *local vs session storage*
+| session storage                                                               | local storage                                                           |
+|-------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Guarda informacion en sesion (Si se cierra el navegador se pierde)            | Los datos almacenados no  tienen fecha de expiracion.                   |
+| sessionStorage.setItem() sessionStorage.getItem() sessionStorage.removeItem() | localStorage.setItem() localStorage.getItem() localStorage.removeItem() |
+</br>
 
 
 
