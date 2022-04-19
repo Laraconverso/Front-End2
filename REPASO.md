@@ -153,7 +153,7 @@ Con la propiedad `innerText` sirve para leer o modificar el texto de una etiquet
 
 #### AGREGAR PREGUNTA DE TEMPLATE STRINGS 
 
-#### *classList...*
+#### *Modificando clases con classList...*
 | .add()                       | .remove()                      | .toggle()                                              | .contains()                                                            |
 |------------------------------|--------------------------------|--------------------------------------------------------|------------------------------------------------------------------------|
 | Agrega la clase  al elemento | Elimina la clase  del elemento | Agrega la clase en caso de no tenerla, sino la elimina | Pregunta si un elemento tiene la clase o no Retorna un valor booleano. |
