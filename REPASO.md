@@ -289,7 +289,68 @@ JSON.stringify()//=JS--> JSON
 | sessionStorage.setItem() sessionStorage.getItem() sessionStorage.removeItem() | localStorage.setItem() localStorage.getItem() localStorage.removeItem() |
 </br>
 
+#### *¿Cuál es la diferencia entre sessionStorage y localStorage?*
+localStorage permite almacenar información por tiempo indeterminado y sessionStorage, no.
 
+#### *El método .setitem() de localStorage, ¿qué nos permite realizar?*
+Agregar valores asociados a una key en localStorage.
+
+#### *El método .removeitem() de sessionStorage, ¿qué nos permite realizar?*
+Remover valores asociados a una key en el sessionStorage.
+
+#### *El método .clear() de localStorage, ¿qué nos permite realizar?*
+Borrar todo el contenido de localStorage.
+
+#### *¿Cuál de las siguientes es una de las características de sessionStorage?*
+Los datos se borran al cerrar la ventana del navegador.
+
+#### *Que es AJAX????*
+AJAX (Asynchronous JavaScript and XML) es un conjunto de tecnologías que se utilizan para crear aplicaciones web asíncronas. Esto las vuelve más rápidas y con mejor respuesta a las acciones del usuario.
+
+#### *Como funciona AJAX?*
+Pasos de el accionar ajax:</br>
+1. Se produce un evento en una página web (se carga la página, se hace clic en un botón)
+2. JavaScript crea un objeto XMLHttpRequest
+3. El objeto XMLHttpRequest envía una solicitud a un servidor web
+4. El servidor procesa la solicitud.
+5. El servidor envía una respuesta a la página web.
+6. La respuesta es leída por JavaScript.
+7. JavaScript realiza la acción adecuada (como la actualización de la página).
+
+#### *Caracteristicas del protocolo HTTP*
+Los mensajes HTTP forman una estructura como medio para realizar una petición de datos iniciada por el cliente, normalmente un navegador web, en busca de su respuesta ejecutada por el servidor.</br>
+El protocolo HTTP es extensible, esto significa que con el tiempo se ha permitido que se implementen más funciones de control y funcionalidad sobre la Web: caché o métodos de identificación o autenticación.
+
+#### *tipos de asincronismo*
+- Concurrencia: cuando las tareas pueden comenzar, ejecutarse y completarse en períodos de tiempo superpuestos, en donde al menos dos hilos están progresando
+- Paralelismo: cuando dos o más tareas se ejecutan exactamente al mismo tiempo.
+
+#### *Diferencias entre concurrencia y el paralelismo*
+La diferencia entre la concurrencia y el paralelismo está en que, en el primer caso, no implica que las tareas terminen de ejecutarse al mismo tiempo literalmente como sí ocurre en el segundo caso. Además, decimos que JavaScript es un lenguaje no-bloqueante porque las tareas no se quedan bloqueadas esperando a que finalicen evitando proseguir con el resto de tareas.
+
+#### *Metodos de peticion: (REQ)*
+`GET` -->solicitar datos
+`POST` --> enviar/ crear un dato
+`DELETE` --> reemplazar un dato
+`PUT` --> modificar parcialment un dato
+`PATCH` --> borrar un dato
+
+#### *promesas* 
+objeto que nos permite decidir si recibo o no lo que estoy esperando </br>
+`resolve`--> si se cumple</br>
+`reject` --> si no se cumple</br>
+`then`--> para la respuestas favorables (positivas)</br>
+`catch` --> ocurre si hay un error 
+
+#### *rest*
+
+#### *fetch*
+
+#### *get*
+
+#### *Manejo de errores con try, catch y finally*
+
+#### *fetch-post*
 
 ## TIPO FINAL
 
