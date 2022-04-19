@@ -150,10 +150,15 @@ Modificando el DOM</br>
 `document.querySelector()` es uno de los selectores que permite elegir que elemento se quiere modificar del DOM. </br>
 La propiedad `.innerHTML` al ser utilizada para escritura reemplaza completamente lo que ya estaba, con el operando `+=` se agrega el contenido al que ya estaba. </br>
 Con la propiedad `innerText` sirve para leer o modificar el texto de una etiqueta HTML.</br>
+Propiedad Style --> le cambiamos el estilo al elemento seleccionado.</br>
 ```js
     document.querySelector('div.nombre').innerText; //--> retorna lo que este escrito en ese elemento. 
     document.querySelector('div.nombre').innerText = 'Lara'; //--> reemplaza lo que estaba escrito por Lara, en este caso. 
     document.querySelector('div.nombre').innerText += 'Messi'; //--> agrega el Messi 
+
+    let nombre = document.querySelector('.title');
+    nombre.style.color = 'rojo';
+    
 ```
 
 ## Clase 6:

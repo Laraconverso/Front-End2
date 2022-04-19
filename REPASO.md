@@ -1,115 +1,6 @@
 ## Repaso final Front2
 
 
-#### *Características mas importantes de JavaScript:*
-Interpretado, orientado a prototipos, tipado débil y dinámico.
-
-
-#### *¿Cuál es la diferencia entre localStorage y sessionStorage?*
-Ambas almacenan datos en el browser. LocalStorage lo hace sin expiracion y
-sessionStorage hasta que el navegador se cierra
-
-#### *¿Qué función podemos utilizar para retrasar la ejecución de un bloque de código?*
-setTimeout()
-
-#### *¿Qué particularidad brinda Javascript a la hora de incorporarlo a un sitio?*
-Dinámica
-
-#### *Por qué los desarrolladores utilizamos DevTools?*
-- Porque podemos crear un programa directamente desde el navegador.
-- Porque tiene informacion valiosa en cada una de sus ventanas para encontrar soluciones.
-- Porque podemos encontrar y manejar los errores de nuestra aplicación.
-
-#### *Escribe el endpoint completo de la API Random User que devuelva 25 usuarios*
-https://randomuser.me/api/?results=25 
-
-#### *¿Qué método podemos usar para agrear o quitar una clase de un elemento?*
-classList.toggle()
-
-#### *¿Que método podemos utilizar para que un usuario pueda ingresar datos?*
-prompt
-
-#### *¿Cómo podemos eliminar los espacios restantes que existen a los lados de una cadena de texto?*
-trim()
-
-#### *¿Con cuál de las siguientes opciones podemos insertar un nuevo nodo en el DOM?*
-innerHTML
-
-#### *El segundo parámetro de setTimeOut recibe un valor expresado en...*
-milisegundos
-
-#### *Como funciona el Math.Random()?*
-
-
-#### *¿Cuál es el resultado de parsear un elemento JSON del localStorage que no existe?*
-null
-
-#### *¿Cómo está compuesta una petición?*
-Headers, Method y Body
-
-#### *¿Con qué método podemos agregar un id a un nodo seleccionado?*
-setAttribute()
-
-#### *¿Por qué el DOM y el documento HTML tienen los mismos elementos?*
-Porque el DOM es un reflejo del HTML
-
-#### *¿De qué manera podemos capturar un error para manejarlo y evitar que la ejecución del código se detenga?*
-catch()
-
-#### *¿Cómo puedo obtener la url de la página actual?*
-window.location.href
-
-#### *Como se recupera el JWT?*
-```js
-JSON.parse(
-    localStorage.getItem(
-        'jwt'
-    )
-);
-```
-
-### *Eventos validos de JS*
-- mouseover
-- load
-- keydown
-
-#### *Cual es el valor de retorno de un fetch?*
-una promesa
-
-#### *¿Cómo detenemos el accionar de un formulario en el evento submit?*
-preventDefault()
-
-#### *¿Qué método nos permite saber si un nodo tiene una clase determinada?*
-classList.contains
-
-#### *¿Que capturamos en el primer .then() de un fetch?*
-un objeto de tipo respuesta
-
-#### *¿En qué pestaña de las DevTools podemos ver la información de sessionStorage?*
-Application
-
-#### *¿Cuál de los siguientes códigos de respuesta representa un error de la petición del lado del cliente?*
-404
-
-#### *Cuando fetch() recibe un solo parámetro, se realiza un pedido a través del método...*
-GET
-
-#### *METODOS HTTP*
-- PUT
-- GET
-- DELETE
-
-#### *¿Qué evento usamos comunmente para enviar formularios?*
-submit
-
-#### *¿Qué representan los códigos de estado HTTP?*
-- Respuestas
-- Redirecciones
-- Errores
-
-#### *¿Qué método nos permite saber si un nodo tiene una clase determinada?*
-classList.contains
-
 #### *Que hace var?*
 Declara una variable global o en el ambito de una funcion.
 
@@ -186,3 +77,197 @@ verdadero
 #### *Los datos obtenidos con cualquiera de los métodos de window se almacenan automáticamente y se visualizan en consola.*
 Falso
 
+#### *¿Qué retorna un prompt() si el usuario presiona “Cancelar”?*
+null
+
+#### *¿Qué tipo de dato almacena un confirm()?*
+booleano
+
+#### *Que hace el parseInt()?*
+Esta función parsea una cadena de texto y devuelve un número.
+
+#### *Que hace el parseFloat()?*
+Esta función parsea una cadena de texto y devuelve un número y los números decimales que existan.
+
+#### *Que hace NaN?*
+La propiedad NaN nos indica que el valor no es un número (Not A Number), por lo que esto nos produciría un error si queremos realizar alguna operación aritmética con este valor.
+
+#### *Objeto Math()*
+- Math.PI --> nos devuelve el numero de PI(3,14...)
+- Math.random() --> Retorna un pto flotante, un numero pseudoaleatorio dentro del rango[0,1).
+- Math.round() --> Retorna el valor de un numero redondeado al entero mas cercano.
+- Math.max() --> Devuelve el mayor de cero o mas numeros. 
+
+#### *Bucles especificos*
+- ``for ... in ...`` --> for(var variedad in objeto)
+- ``for... of...`` --> for(var variable of elemtneo iterable)
+
+#### *JavaScript nos permite interactuar con el front-end del usuario siempre y cuando se haga una petición al servidor.*
+Falso
+
+#### *¿Qué es el DOM?*
+La representación en objetos que hace JavaScript del documento HTML.
+
+#### *El objeto window representa la ventana donde estamos navegando.*
+Verdadero
+
+#### *Mediante el objeto document podemos...*
+Leer todos los elementos del HTML y modificarlos, si así lo quisiéramos.
+
+<img src="./img-teoria/img_dom.png" alt="Imagen del Dom">
+
+#### *Selectores*
+- `document.getElementById();` // el id es algo unico de cada elemento</br>
+- `document.getElementsByClassName();` //devuelve un array de los elementos con la clase indicada </br>
+- `document.getElementsByTagName("p");` //devuelve un array de todos los elementos con el tagname indicado </br>
+- `document.querySelector("p");`// mas general puedo buscar cualquier cosa, depende de como lo escribo en los parametros, devuelve el primer elemento encontrado </br>
+- `document.querySelectorAll("p"); `//devuelve un array con todos los elementos
+
+#### *SelectoresDOM*
+- `querySelector()`
+```js
+    let titulo = document.querySelecto('.title');
+```
+- `querSelectorAll()`
+```js
+    let nombres = document.querySelectorAll('.name');
+```
+- `getElementById()`
+```js
+    let marca = document.getElementById('marca');
+```
+comparando selectores:</br>
+| querySelector()| querySelectorAll()| getElementById()|   
+|----------------|-------------------|-----------------|
+| Retorna el primer elemento del DOM que cumplecon la condicion que buscamos. | Retorna todos los elementos del DOM que cumplen con la condicion que buscamos. | Retorna el elemento del DOM que cumpla con el id que buscamos. |
+
+#### *Modificaciones del DOM*
+`document.querySelector()` es uno de los selectores que permite elegir que elemento se quiere modificar del DOM. </br>
+La propiedad `.innerHTML` al ser utilizada para escritura reemplaza completamente lo que ya estaba, con el operando `+=` se agrega el contenido al que ya estaba. </br>
+Con la propiedad `innerText` sirve para leer o modificar el texto de una etiqueta HTML.</br>
+```js
+    document.querySelector('div.nombre').innerText; //--> retorna lo que este escrito en ese elemento. 
+    document.querySelector('div.nombre').innerText = 'Lara'; //--> reemplaza lo que estaba escrito por Lara, en este caso. 
+    document.querySelector('div.nombre').innerText += 'Messi'; //--> agrega el Messi 
+```
+
+#### AGREGAR PREGUNTA DE TEMPLATE STRINGS 
+
+#### *classList...*
+| .add()                       | .remove()                      | .toggle()                                              | .contains()                                                            |
+|------------------------------|--------------------------------|--------------------------------------------------------|------------------------------------------------------------------------|
+| Agrega la clase  al elemento | Elimina la clase  del elemento | Agrega la clase en caso de no tenerla, sino la elimina | Pregunta si un elemento tiene la clase o no Retorna un valor booleano. |
+
+</br>
+
+
+## TIPO FINAL
+
+#### *Como funciona el Math.Random()?*
+Ejemplo: ``` let numeroRand = Math.random()*3+1``` seleccionaria un numero entre el 1, 2 o 3.
+
+#### *Características mas importantes de JavaScript:*
+Interpretado, orientado a prototipos, tipado débil y dinámico.
+
+
+#### *¿Cuál es la diferencia entre localStorage y sessionStorage?*
+Ambas almacenan datos en el browser. LocalStorage lo hace sin expiracion y
+sessionStorage hasta que el navegador se cierra
+
+#### *¿Qué función podemos utilizar para retrasar la ejecución de un bloque de código?*
+setTimeout()
+
+#### *¿Qué particularidad brinda Javascript a la hora de incorporarlo a un sitio?*
+Dinámica
+
+#### *Por qué los desarrolladores utilizamos DevTools?*
+- Porque podemos crear un programa directamente desde el navegador.
+- Porque tiene informacion valiosa en cada una de sus ventanas para encontrar soluciones.
+- Porque podemos encontrar y manejar los errores de nuestra aplicación.
+
+#### *Escribe el endpoint completo de la API Random User que devuelva 25 usuarios*
+https://randomuser.me/api/?results=25 
+
+#### *¿Qué método podemos usar para agrear o quitar una clase de un elemento?*
+classList.toggle()
+
+#### *¿Que método podemos utilizar para que un usuario pueda ingresar datos?*
+prompt
+
+#### *¿Cómo podemos eliminar los espacios restantes que existen a los lados de una cadena de texto?*
+trim()
+
+#### *¿Con cuál de las siguientes opciones podemos insertar un nuevo nodo en el DOM?*
+innerHTML
+
+#### *El segundo parámetro de setTimeOut recibe un valor expresado en...*
+milisegundos
+
+#### *¿Cuál es el resultado de parsear un elemento JSON del localStorage que no existe?*
+null
+
+#### *¿Cómo está compuesta una petición?*
+Headers, Method y Body
+
+#### *¿Con qué método podemos agregar un id a un nodo seleccionado?*
+setAttribute()
+
+#### *¿Por qué el DOM y el documento HTML tienen los mismos elementos?*
+Porque el DOM es un reflejo del HTML
+
+#### *¿De qué manera podemos capturar un error para manejarlo y evitar que la ejecución del código se detenga?*
+catch()
+
+#### *¿Cómo puedo obtener la url de la página actual?*
+window.location.href
+
+#### *Como se recupera el JWT?*
+```js
+JSON.parse(
+    localStorage.getItem(
+        'jwt'
+    )
+);
+```
+
+### *Eventos validos de JS*
+- mouseover
+- load
+- keydown
+
+#### *Cual es el valor de retorno de un fetch?*
+una promesa
+
+#### *¿Cómo detenemos el accionar de un formulario en el evento submit?*
+preventDefault()
+
+#### *¿Qué método nos permite saber si un nodo tiene una clase determinada?*
+classList.contains
+
+#### *¿Que capturamos en el primer .then() de un fetch?*
+un objeto de tipo respuesta
+
+#### *¿En qué pestaña de las DevTools podemos ver la información de sessionStorage?*
+Application
+
+#### *¿Cuál de los siguientes códigos de respuesta representa un error de la petición del lado del cliente?*
+404
+
+#### *Cuando fetch() recibe un solo parámetro, se realiza un pedido a través del método...*
+GET
+
+#### *METODOS HTTP*
+- PUT
+- GET
+- DELETE
+
+#### *¿Qué evento usamos comunmente para enviar formularios?*
+submit
+
+#### *¿Qué representan los códigos de estado HTTP?*
+- Respuestas
+- Redirecciones
+- Errores
+
+#### *¿Qué método nos permite saber si un nodo tiene una clase determinada?*
+classList.contains
