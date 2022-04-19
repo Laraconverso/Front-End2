@@ -151,7 +151,14 @@ Con la propiedad `innerText` sirve para leer o modificar el texto de una etiquet
     document.querySelector('div.nombre').innerText += 'Messi'; //--> agrega el Messi 
 ```
 
-#### AGREGAR PREGUNTA DE TEMPLATE STRINGS 
+#### *Sintaxis correcta de un template string*
+```"Mi variable vale ${miVariable}"``` --> se abre con las comillas invertidas`</br>
+Ejemplo mas claro 
+```js
+const miNombre = "Lara";
+const miTemplate = `mi nombre es ${miNombre}`;
+console.log(miTemplate);
+```
 
 #### *Modificando clases con classList...*
 | .add()                       | .remove()                      | .toggle()                                              | .contains()                                                            |
@@ -159,6 +166,54 @@ Con la propiedad `innerText` sirve para leer o modificar el texto de una etiquet
 | Agrega la clase  al elemento | Elimina la clase  del elemento | Agrega la clase en caso de no tenerla, sino la elimina | Pregunta si un elemento tiene la clase o no Retorna un valor booleano. |
 
 </br>
+
+#### *Creacion de nodos elemento*
+`document.createElement("input");`
+
+#### *Creacion de nodo texto*
+`document.createTextNode("HOLIS");`
+
+#### *Adherir un elemento hijo al DOM*
+`document.body.appendChild(titulo);`
+
+#### *Marcá la opción que describa correctamente el método createNodeText().*
+createNodeText() = Podría ser una cadena de texto vacía, lleva comillas y no se visualiza hasta asignarlo a un elemento.
+
+
+#### *appendChild solo asignará el elemento hijo si creamos antes el elemento padre con createElement.*
+FALSO.
+
+#### *El siguiente ejercicio da como resultado: un <p> con el texto “Buenos dias” dentro de un div*
+```html
+<script>
+var p = document.createElement("P")
+var texT = document.createTextNode("Buenos Dias");
+p.appendChild(texT);
+var diV = document.querySelector("div").appendChild(p);
+document.body.appendChild(diV)
+</script> 
+```
+VERDADERO
+
+#### *Atributos dinamicos*
+--> Etiqueta <img>
+- alt
+- src
+- width
+--> Etiqueta <a>
+- href
+- target
+--> Etiqueta <meta>
+- charset
+- name
+
+#### *Metodos de atributos* 
+`hasAtributte()` --> evalua si contiene el atributo (retorna boolean)
+`getAttribute()` --> revortna el elemento si existe o null si no
+`removeAttribute()`--> elimina el atributo
+`setAttribute()` --> agrega un atributo 
+
+#### *Eventos*
 
 
 ## TIPO FINAL
