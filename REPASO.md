@@ -213,7 +213,49 @@ VERDADERO
 `removeAttribute()`--> elimina el atributo
 `setAttribute()` --> agrega un atributo 
 
-#### *Eventos*
+#### *Que evento permite que todo el script se ejecute cuando se haya cargado por completo el objeto document dentro del objeto window?*
+```js
+window.onload = function(){
+    console.log("Se cargo el documento.");
+}
+```
+
+#### *Que evento nos permite ejecutar una accion cuando se hace click sobre un elemento al cual le estamos aplicando una propiedad?*
+```js
+btn.onclick = function(){
+    console.log("Se hizo click.");
+}
+```
+
+#### *Para que sirve el preventDefault()?*
+Nos permite evitar que se ejecute el evento predeterminado -o no nativo- del elemento al que se lo estamos aplicando.</br>
+-->Evitar que el elemento ejecute el evento que trae por default para que podamos manipularlo antes.
+
+#### *LISTA de eventos mas utilizados*
+- `onlick` --> cuando se hace click.
+- `ondblclick` --> cuando se hace soble click.
+- `onmouseover` --> cuando el mouse se mueve sobre el elemento.
+- `onmousemove` --> cuando se mueve el mouse.
+- `onscroll` --> cuando se hace scroll.
+- `onkeydown` --> cuando se aprieta una tecla.
+- `onload` --> cuando se carga la pagina.
+- `onsubmit`--> cuando se envia un dormulario.
+
+#### *Eventos del mouse*
+- `mouseOver`
+- `mouseOut`
+
+#### *Eventos del teclado*
+- `onkeydown`
+- `onkeyup`
+- `onkeypress`
+
+#### *¿Cuál de todas las propiedades de un evento de teclado es la que almacena el valor de la tecla presionada?*
+key
+
+#### *forms*
+<img src="./img-teoria/img_form.png">
+
 
 
 ## TIPO FINAL
