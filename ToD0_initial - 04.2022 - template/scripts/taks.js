@@ -124,4 +124,9 @@ window.addEventListener('load', function () {
 
   };
 
+
+  let parseo = JSON.parse(localStorage.getItem("algo"));
+  console.log(parseo);
+  
 });
+

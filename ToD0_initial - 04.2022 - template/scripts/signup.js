@@ -64,3 +64,7 @@ window.addEventListener('load', function () {
             })
     }
 });
+
+let hoola= "hola";
+
+console.log(hoola.json());
