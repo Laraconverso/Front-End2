@@ -342,6 +342,8 @@ objeto que nos permite decidir si recibo o no lo que estoy esperando </br>
 `then`--> para la respuestas favorables (positivas)</br>
 `catch` --> ocurre si hay un error 
 
+## *Hacer repaso de los sgtes temas:*
+
 #### *rest*
 
 #### *fetch*
@@ -352,113 +354,3 @@ objeto que nos permite decidir si recibo o no lo que estoy esperando </br>
 
 #### *fetch-post*
 
-## TIPO FINAL
-
-#### *Como funciona el Math.Random()?*
-Ejemplo: ``` let numeroRand = Math.random()*3+1``` seleccionaria un numero entre el 1, 2 o 3.
-
-#### *Características mas importantes de JavaScript:*
-Interpretado, orientado a prototipos, tipado débil y dinámico.
-
-
-#### *¿Cuál es la diferencia entre localStorage y sessionStorage?*
-Ambas almacenan datos en el browser. LocalStorage lo hace sin expiracion y
-sessionStorage hasta que el navegador se cierra
-
-#### *¿Qué función podemos utilizar para retrasar la ejecución de un bloque de código?*
-setTimeout()
-
-#### *¿Qué particularidad brinda Javascript a la hora de incorporarlo a un sitio?*
-Dinámica
-
-#### *Por qué los desarrolladores utilizamos DevTools?*
-- Porque podemos crear un programa directamente desde el navegador.
-- Porque tiene informacion valiosa en cada una de sus ventanas para encontrar soluciones.
-- Porque podemos encontrar y manejar los errores de nuestra aplicación.
-
-#### *Escribe el endpoint completo de la API Random User que devuelva 25 usuarios*
-https://randomuser.me/api/?results=25 
-
-#### *¿Qué método podemos usar para agrear o quitar una clase de un elemento?*
-classList.toggle()
-
-#### *¿Que método podemos utilizar para que un usuario pueda ingresar datos?*
-prompt
-
-#### *¿Cómo podemos eliminar los espacios restantes que existen a los lados de una cadena de texto?*
-trim()
-
-#### *¿Con cuál de las siguientes opciones podemos insertar un nuevo nodo en el DOM?*
-innerHTML
-
-#### *El segundo parámetro de setTimeOut recibe un valor expresado en...*
-milisegundos
-
-#### *¿Cuál es el resultado de parsear un elemento JSON del localStorage que no existe?*
-null
-
-#### *¿Cómo está compuesta una petición?*
-Headers, Method y Body
-
-#### *¿Con qué método podemos agregar un id a un nodo seleccionado?*
-setAttribute()
-
-#### *¿Por qué el DOM y el documento HTML tienen los mismos elementos?*
-Porque el DOM es un reflejo del HTML
-
-#### *¿De qué manera podemos capturar un error para manejarlo y evitar que la ejecución del código se detenga?*
-catch()
-
-#### *¿Cómo puedo obtener la url de la página actual?*
-window.location.href
-
-#### *Como se recupera el JWT?*
-```js
-JSON.parse(
-    localStorage.getItem(
-        'jwt'
-    )
-);
-```
-
-### *Eventos validos de JS*
-- mouseover
-- load
-- keydown
-
-#### *Cual es el valor de retorno de un fetch?*
-una promesa
-
-#### *¿Cómo detenemos el accionar de un formulario en el evento submit?*
-preventDefault()
-
-#### *¿Qué método nos permite saber si un nodo tiene una clase determinada?*
-classList.contains
-
-#### *¿Que capturamos en el primer .then() de un fetch?*
-un objeto de tipo respuesta
-
-#### *¿En qué pestaña de las DevTools podemos ver la información de sessionStorage?*
-Application
-
-#### *¿Cuál de los siguientes códigos de respuesta representa un error de la petición del lado del cliente?*
-404
-
-#### *Cuando fetch() recibe un solo parámetro, se realiza un pedido a través del método...*
-GET
-
-#### *METODOS HTTP*
-- PUT
-- GET
-- DELETE
-
-#### *¿Qué evento usamos comunmente para enviar formularios?*
-submit
-
-#### *¿Qué representan los códigos de estado HTTP?*
-- Respuestas
-- Redirecciones
-- Errores
-
-#### *¿Qué método nos permite saber si un nodo tiene una clase determinada?*
-classList.contains
