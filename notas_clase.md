@@ -355,3 +355,6 @@ Hacemos el ToDo app
 ----
 ### _Notas del material_
 ### _Notas del clase_
+
+Animaciones y librerias 
+COMPLETAR NOTAS!!!!
